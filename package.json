@@ -1,6 +1,6 @@
 {
   "name": "js-tool-big-box",
-  "version": "1.0.48",
+  "version": "1.0.49",
   "description": "",
   "keywords": [
     "time",
@@ -16,6 +16,7 @@
     "jsonp",
     "data"
   ],
+  "repository": "jimwanwan/js-tool-big-box",
   "main": "index.js",
   "type": "module",
   "scripts": {
