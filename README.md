@@ -1,2 +1,11 @@
-# jsToolBigBox
-用了这个库，你就少写公共方法
+## 学习文档
+
+```
+https://blog.csdn.net/xingyu_qie/category_12644939.html
+```
+
+## 联系作者
+
+```
+https://blog.csdn.net/xingyu_qie
+```

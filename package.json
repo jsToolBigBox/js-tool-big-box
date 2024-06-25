@@ -1,0 +1,26 @@
+{
+  "name": "js-tool-big-box",
+  "version": "1.0.48",
+  "description": "",
+  "keywords": [
+    "time",
+    "date",
+    "datetime",
+    "cookie",
+    "localStorage",
+    "debounce",
+    "throttle",
+    "string",
+    "number",
+    "match",
+    "jsonp",
+    "data"
+  ],
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "经海路大白狗",
+  "license": "MIT"
+}
