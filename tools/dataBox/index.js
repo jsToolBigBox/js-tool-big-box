@@ -30,6 +30,18 @@ const dataBox = {
     },
     getDataType: function(value) {
         return Object.prototype.toString.call(value);
+    },
+    sortArrayNum: function(arr, type) {
+        let n = arr.length;
+        for (let i = 0; i < n - 1; i++) {
+            for (let j = 0; j < n - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    // 交换元素
+                    [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+                }
+            }
+        }
+        return type ? arr.reverse() : arr;
     }
 }
 export default dataBox;
