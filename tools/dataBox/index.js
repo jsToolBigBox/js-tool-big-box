@@ -42,6 +42,25 @@ const dataBox = {
             }
         }
         return type ? arr.reverse() : arr;
+    },
+    sortByNumber: function(arr, attr, sortType) {
+        if (Object.prototype.toString.call(arr[0][attr]) === '[object Number]') {
+            let sortArr = arr.sort((a, b) => a[attr] - b[attr]);
+            return sortType ? sortArr.reverse() : sortArr;
+        }
+        return arr;
+    },
+    sortByletter: function(arr, attr, sortType) {
+        let sortArr = arr.sort((a, b) => a[attr].localeCompare(b[attr], 'zh-Hans-CN'));
+        return sortType ? sortArr.reverse() : sortArr;
+    },
+    sortByTime: function(arr, attr, sortType) {
+        const newDate = new Date(arr[0][attr]);
+        if (Object.prototype.toString.call(newDate) === '[object Date]') {
+            let sortArr = arr.sort((a, b) => new Date(a[attr]) - new Date(b[attr]));
+            return sortType ? sortArr.reverse() : sortArr;
+        }
+        return arr;
     }
 }
 export default dataBox;
